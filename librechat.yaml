@@ -22,7 +22,7 @@ endpoints:
     - name: "OpenAI"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://api.iconify.design/simple-icons/openai.svg?color=white"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/openai.svg"
       models:
         default:
           - "openai/gpt-4.1"
@@ -47,7 +47,7 @@ endpoints:
     - name: "Claude"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://api.iconify.design/simple-icons/anthropic.svg?color=white"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/claude.svg"
       models:
         default:
           - "anthropic/claude-opus-4.6"
@@ -73,7 +73,7 @@ endpoints:
     - name: "Gemini"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://api.iconify.design/simple-icons/googlegemini.svg?color=white"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/gemini.svg"
       models:
         default:
           - "google/gemini-3.1-pro-preview"
@@ -99,7 +99,7 @@ endpoints:
     - name: "DeepSeek"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://svgl.app/library/deepseek.svg"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/deepseek.svg"
       models:
         default:
           - "deepseek/deepseek-v3.2"
@@ -122,7 +122,7 @@ endpoints:
     - name: "Grok"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://api.iconify.design/simple-icons/x.svg?color=white"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/grok.svg"
       models:
         default:
           - "x-ai/grok-4"
@@ -146,7 +146,7 @@ endpoints:
     - name: "Llama"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://api.iconify.design/simple-icons/meta.svg?color=white"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/meta.svg"
       models:
         default:
           - "meta-llama/llama-4-maverick"
@@ -169,7 +169,7 @@ endpoints:
     - name: "Mistral"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://api.iconify.design/logos/mistral-ai-icon.svg"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/mistral.svg"
       models:
         default:
           - "mistralai/mistral-large-2512"
@@ -192,7 +192,7 @@ endpoints:
     - name: "Qwen"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://api.iconify.design/simple-icons/alibabadotcom.svg?color=white"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/qwen.svg"
       models:
         default:
           - "qwen/qwen-max"
@@ -215,7 +215,7 @@ endpoints:
     - name: "Cohere"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://svgl.app/library/cohere.svg"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/cohere.svg"
       models:
         default:
           - "cohere/command-a"
