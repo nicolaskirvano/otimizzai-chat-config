@@ -15,6 +15,153 @@ registration:
   allowedDomains: []
 
 # ═══════════════════════════════════════════════
+# MCP Servers - Apps conectados via Composio
+# ═══════════════════════════════════════════════
+mcpServers:
+  gmail:
+    type: streamable-http
+    url: "https://backend.composio.dev/v3/mcp/4b4e60bf-6121-42c8-8ae7-61119a975608?user_id={{LIBRECHAT_USER_ID}}"
+    title: "Gmail"
+    description: "Leia, busque e envie emails do seu Gmail"
+    iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/gmail.svg"
+    headers:
+      x-api-key: "${COMPOSIO_API_KEY}"
+    timeout: 60000
+    initTimeout: 150000
+    chatMenu: true
+    startup: false
+
+  google-drive:
+    type: streamable-http
+    url: "https://backend.composio.dev/v3/mcp/e73b960e-3e6f-4cff-b42e-4754cb7ed4d8?user_id={{LIBRECHAT_USER_ID}}"
+    title: "Google Drive"
+    description: "Acesse e gerencie seus arquivos do Google Drive"
+    iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/googledrive.svg"
+    headers:
+      x-api-key: "${COMPOSIO_API_KEY}"
+    timeout: 60000
+    initTimeout: 150000
+    chatMenu: true
+    startup: false
+
+  google-calendar:
+    type: streamable-http
+    url: "https://backend.composio.dev/v3/mcp/443f0925-b25d-4644-a23a-bc753d2ff61e?user_id={{LIBRECHAT_USER_ID}}"
+    title: "Google Calendar"
+    description: "Veja e gerencie sua agenda do Google Calendar"
+    iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/googlecalendar.svg"
+    headers:
+      x-api-key: "${COMPOSIO_API_KEY}"
+    timeout: 60000
+    initTimeout: 150000
+    chatMenu: true
+    startup: false
+
+  google-sheets:
+    type: streamable-http
+    url: "https://backend.composio.dev/v3/mcp/27d25958-6124-4e9a-9e03-079504d5ab06?user_id={{LIBRECHAT_USER_ID}}"
+    title: "Google Sheets"
+    description: "Leia e edite planilhas do Google Sheets"
+    iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/googlesheets.svg"
+    headers:
+      x-api-key: "${COMPOSIO_API_KEY}"
+    timeout: 60000
+    initTimeout: 150000
+    chatMenu: true
+    startup: false
+
+  google-docs:
+    type: streamable-http
+    url: "https://backend.composio.dev/v3/mcp/a388dfee-8679-4291-84ee-25b015eb7de2?user_id={{LIBRECHAT_USER_ID}}"
+    title: "Google Docs"
+    description: "Acesse e edite documentos do Google Docs"
+    iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/googledocs.svg"
+    headers:
+      x-api-key: "${COMPOSIO_API_KEY}"
+    timeout: 60000
+    initTimeout: 150000
+    chatMenu: true
+    startup: false
+
+  notion:
+    type: streamable-http
+    url: "https://backend.composio.dev/v3/mcp/c4a0abbb-9f4a-473e-86fc-8bf83acaf4e7?user_id={{LIBRECHAT_USER_ID}}"
+    title: "Notion"
+    description: "Busque e edite páginas e databases do Notion"
+    iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/notion.svg"
+    headers:
+      x-api-key: "${COMPOSIO_API_KEY}"
+    timeout: 60000
+    initTimeout: 150000
+    chatMenu: true
+    startup: false
+
+  slack:
+    type: streamable-http
+    url: "https://backend.composio.dev/v3/mcp/06ed91ca-5919-49b9-92d6-a79714e5f9d5?user_id={{LIBRECHAT_USER_ID}}"
+    title: "Slack"
+    description: "Leia mensagens e interaja com canais do Slack"
+    iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/slack.svg"
+    headers:
+      x-api-key: "${COMPOSIO_API_KEY}"
+    timeout: 60000
+    initTimeout: 150000
+    chatMenu: true
+    startup: false
+
+  github:
+    type: streamable-http
+    url: "https://backend.composio.dev/v3/mcp/91ff848e-e84e-41ba-9ee7-58201331fb3e?user_id={{LIBRECHAT_USER_ID}}"
+    title: "GitHub"
+    description: "Acesse repositórios, issues e pull requests do GitHub"
+    iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/github.svg"
+    headers:
+      x-api-key: "${COMPOSIO_API_KEY}"
+    timeout: 60000
+    initTimeout: 150000
+    chatMenu: true
+    startup: false
+
+  hubspot:
+    type: streamable-http
+    url: "https://backend.composio.dev/v3/mcp/cdae67fb-2e17-4529-b83e-f39ba4d0ef83?user_id={{LIBRECHAT_USER_ID}}"
+    title: "HubSpot"
+    description: "Acesse contatos, deals e dados do HubSpot CRM"
+    iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/hubspot.svg"
+    headers:
+      x-api-key: "${COMPOSIO_API_KEY}"
+    timeout: 60000
+    initTimeout: 150000
+    chatMenu: true
+    startup: false
+
+  trello:
+    type: streamable-http
+    url: "https://backend.composio.dev/v3/mcp/f10b1bb4-2299-40e4-a740-a552fca5d705?user_id={{LIBRECHAT_USER_ID}}"
+    title: "Trello"
+    description: "Gerencie boards, listas e cards do Trello"
+    iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/trello.svg"
+    headers:
+      x-api-key: "${COMPOSIO_API_KEY}"
+    timeout: 60000
+    initTimeout: 150000
+    chatMenu: true
+    startup: false
+
+  linear:
+    type: streamable-http
+    url: "https://backend.composio.dev/v3/mcp/934f67cb-7570-4575-82a8-f16fc4c3c06d?user_id={{LIBRECHAT_USER_ID}}"
+    title: "Linear"
+    description: "Gerencie issues e projetos do Linear"
+    iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/linear.svg"
+    headers:
+      x-api-key: "${COMPOSIO_API_KEY}"
+    timeout: 60000
+    initTimeout: 150000
+    chatMenu: true
+    startup: false
+
+# ═══════════════════════════════════════════════
 # Model Specs - Nomes limpos para o usuário
 # ═══════════════════════════════════════════════
 modelSpecs:
