@@ -22,7 +22,7 @@ endpoints:
     - name: "OpenAI"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://cdn.jsdelivr.net/gh/lobehub/lobe-icons/packages/static-png/icons/openai-text.png"
+      iconURL: "https://api.iconify.design/simple-icons/openai.svg?color=white"
       models:
         default:
           - "openai/gpt-4.1"
@@ -47,7 +47,7 @@ endpoints:
     - name: "Claude"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://cdn.jsdelivr.net/gh/lobehub/lobe-icons/packages/static-png/icons/claude-text.png"
+      iconURL: "https://api.iconify.design/simple-icons/anthropic.svg?color=white"
       models:
         default:
           - "anthropic/claude-opus-4.6"
@@ -73,7 +73,7 @@ endpoints:
     - name: "Gemini"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://cdn.jsdelivr.net/gh/lobehub/lobe-icons/packages/static-png/icons/gemini-text.png"
+      iconURL: "https://api.iconify.design/simple-icons/googlegemini.svg?color=white"
       models:
         default:
           - "google/gemini-3.1-pro-preview"
@@ -99,7 +99,7 @@ endpoints:
     - name: "DeepSeek"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://cdn.jsdelivr.net/gh/lobehub/lobe-icons/packages/static-png/icons/deepseek-text.png"
+      iconURL: "https://svgl.app/library/deepseek.svg"
       models:
         default:
           - "deepseek/deepseek-v3.2"
@@ -122,7 +122,7 @@ endpoints:
     - name: "Grok"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://cdn.jsdelivr.net/gh/lobehub/lobe-icons/packages/static-png/icons/grok-text.png"
+      iconURL: "https://api.iconify.design/simple-icons/x.svg?color=white"
       models:
         default:
           - "x-ai/grok-4"
@@ -146,7 +146,7 @@ endpoints:
     - name: "Llama"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://cdn.jsdelivr.net/gh/lobehub/lobe-icons/packages/static-png/icons/meta-text.png"
+      iconURL: "https://api.iconify.design/simple-icons/meta.svg?color=white"
       models:
         default:
           - "meta-llama/llama-4-maverick"
@@ -169,7 +169,7 @@ endpoints:
     - name: "Mistral"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://cdn.jsdelivr.net/gh/lobehub/lobe-icons/packages/static-png/icons/mistral-text.png"
+      iconURL: "https://api.iconify.design/logos/mistral-ai-icon.svg"
       models:
         default:
           - "mistralai/mistral-large-2512"
@@ -192,7 +192,7 @@ endpoints:
     - name: "Qwen"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://cdn.jsdelivr.net/gh/lobehub/lobe-icons/packages/static-png/icons/qwen-text.png"
+      iconURL: "https://api.iconify.design/simple-icons/alibabadotcom.svg?color=white"
       models:
         default:
           - "qwen/qwen-max"
@@ -215,7 +215,7 @@ endpoints:
     - name: "Cohere"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
-      iconURL: "https://cdn.jsdelivr.net/gh/lobehub/lobe-icons/packages/static-png/icons/cohere-text.png"
+      iconURL: "https://svgl.app/library/cohere.svg"
       models:
         default:
           - "cohere/command-a"
