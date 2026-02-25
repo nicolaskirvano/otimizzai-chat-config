@@ -14,6 +14,325 @@ registration:
   socialLogins: []
   allowedDomains: []
 
+# ═══════════════════════════════════════════════
+# Model Specs - Nomes limpos para o usuário
+# ═══════════════════════════════════════════════
+modelSpecs:
+  enforce: true
+  prioritize: true
+  list:
+    # ── OpenAI ──
+    - name: "GPT-4.1"
+      label: "GPT-4.1"
+      description: "Modelo mais avançado da OpenAI"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/openai.svg"
+      preset:
+        endpoint: "OpenAI"
+        model: "openai/gpt-4.1"
+    - name: "GPT-4.1 Mini"
+      label: "GPT-4.1 Mini"
+      description: "Versão rápida e econômica do GPT-4.1"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/openai.svg"
+      preset:
+        endpoint: "OpenAI"
+        model: "openai/gpt-4.1-mini"
+    - name: "GPT-4.1 Nano"
+      label: "GPT-4.1 Nano"
+      description: "Versão ultra-rápida e mais barata"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/openai.svg"
+      preset:
+        endpoint: "OpenAI"
+        model: "openai/gpt-4.1-nano"
+    - name: "GPT-4o"
+      label: "GPT-4o"
+      description: "Modelo multimodal da OpenAI"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/openai.svg"
+      preset:
+        endpoint: "OpenAI"
+        model: "openai/gpt-4o"
+    - name: "GPT-4o Mini"
+      label: "GPT-4o Mini"
+      description: "Versão compacta do GPT-4o"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/openai.svg"
+      preset:
+        endpoint: "OpenAI"
+        model: "openai/gpt-4o-mini"
+    - name: "o3-mini"
+      label: "o3-mini"
+      description: "Modelo de raciocínio avançado da OpenAI"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/openai.svg"
+      preset:
+        endpoint: "OpenAI"
+        model: "openai/o3-mini"
+
+    # ── Claude (Anthropic) ──
+    - name: "Claude Opus 4.6"
+      label: "Claude Opus 4.6"
+      description: "Modelo mais poderoso da Anthropic"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/claude.svg"
+      preset:
+        endpoint: "Claude"
+        model: "anthropic/claude-opus-4.6"
+    - name: "Claude Sonnet 4.6"
+      label: "Claude Sonnet 4.6"
+      description: "Inteligência de ponta, rápido e eficiente"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/claude.svg"
+      preset:
+        endpoint: "Claude"
+        model: "anthropic/claude-sonnet-4.6"
+    - name: "Claude Sonnet 4.5"
+      label: "Claude Sonnet 4.5"
+      description: "Excelente para código e análise"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/claude.svg"
+      preset:
+        endpoint: "Claude"
+        model: "anthropic/claude-sonnet-4.5"
+    - name: "Claude Opus 4.5"
+      label: "Claude Opus 4.5"
+      description: "Alta capacidade para tarefas complexas"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/claude.svg"
+      preset:
+        endpoint: "Claude"
+        model: "anthropic/claude-opus-4.5"
+    - name: "Claude Opus 4.1"
+      label: "Claude Opus 4.1"
+      description: "Modelo premium para tarefas longas"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/claude.svg"
+      preset:
+        endpoint: "Claude"
+        model: "anthropic/claude-opus-4.1"
+    - name: "Claude Sonnet 4"
+      label: "Claude Sonnet 4"
+      description: "Ótimo equilíbrio entre velocidade e qualidade"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/claude.svg"
+      preset:
+        endpoint: "Claude"
+        model: "anthropic/claude-sonnet-4"
+    - name: "Claude Haiku 4.5"
+      label: "Claude Haiku 4.5"
+      description: "Mais rápido e mais barato da Anthropic"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/claude.svg"
+      preset:
+        endpoint: "Claude"
+        model: "anthropic/claude-haiku-4.5"
+
+    # ── Gemini (Google) ──
+    - name: "Gemini 3.1 Pro"
+      label: "Gemini 3.1 Pro"
+      description: "Modelo mais recente do Google com 1M de contexto"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/gemini.svg"
+      preset:
+        endpoint: "Gemini"
+        model: "google/gemini-3.1-pro-preview"
+    - name: "Gemini 3 Pro"
+      label: "Gemini 3 Pro"
+      description: "Raciocínio avançado do Google"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/gemini.svg"
+      preset:
+        endpoint: "Gemini"
+        model: "google/gemini-3-pro-preview"
+    - name: "Gemini 3 Flash"
+      label: "Gemini 3 Flash"
+      description: "Ultra-rápido para uso diário"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/gemini.svg"
+      preset:
+        endpoint: "Gemini"
+        model: "google/gemini-3-flash-preview"
+    - name: "Gemini 3 Pro Image"
+      label: "Gemini 3 Pro Image"
+      description: "Geração e edição de imagens"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/gemini.svg"
+      preset:
+        endpoint: "Gemini"
+        model: "google/gemini-3-pro-image-preview"
+    - name: "Gemini 2.5 Pro"
+      label: "Gemini 2.5 Pro"
+      description: "Modelo estável e confiável"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/gemini.svg"
+      preset:
+        endpoint: "Gemini"
+        model: "google/gemini-2.5-pro"
+    - name: "Gemini 2.5 Flash"
+      label: "Gemini 2.5 Flash"
+      description: "Rápido e eficiente"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/gemini.svg"
+      preset:
+        endpoint: "Gemini"
+        model: "google/gemini-2.5-flash"
+    - name: "Gemini 2.5 Flash Image"
+      label: "Gemini 2.5 Flash Image"
+      description: "Geração de imagens rápida"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/gemini.svg"
+      preset:
+        endpoint: "Gemini"
+        model: "google/gemini-2.5-flash-image"
+
+    # ── DeepSeek ──
+    - name: "DeepSeek V3.2"
+      label: "DeepSeek V3.2"
+      description: "Qualidade de fronteira por fração do custo"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/deepseek.svg"
+      preset:
+        endpoint: "DeepSeek"
+        model: "deepseek/deepseek-v3.2"
+    - name: "DeepSeek R1"
+      label: "DeepSeek R1"
+      description: "Modelo de raciocínio profundo"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/deepseek.svg"
+      preset:
+        endpoint: "DeepSeek"
+        model: "deepseek/deepseek-r1-0528"
+    - name: "DeepSeek V3.1"
+      label: "DeepSeek V3.1"
+      description: "Chat avançado e versátil"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/deepseek.svg"
+      preset:
+        endpoint: "DeepSeek"
+        model: "deepseek/deepseek-chat-v3.1"
+    - name: "DeepSeek R1 Classic"
+      label: "DeepSeek R1 Classic"
+      description: "Versão estável do modelo de raciocínio"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/deepseek.svg"
+      preset:
+        endpoint: "DeepSeek"
+        model: "deepseek/deepseek-r1"
+
+    # ── Grok (xAI) ──
+    - name: "Grok 4"
+      label: "Grok 4"
+      description: "Modelo mais poderoso da xAI"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/grok.svg"
+      preset:
+        endpoint: "Grok"
+        model: "x-ai/grok-4"
+    - name: "Grok 4 Fast"
+      label: "Grok 4 Fast"
+      description: "Grok 4 otimizado para velocidade"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/grok.svg"
+      preset:
+        endpoint: "Grok"
+        model: "x-ai/grok-4-fast"
+    - name: "Grok 4.1 Fast"
+      label: "Grok 4.1 Fast"
+      description: "Versão mais recente e rápida"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/grok.svg"
+      preset:
+        endpoint: "Grok"
+        model: "x-ai/grok-4.1-fast"
+    - name: "Grok 3"
+      label: "Grok 3"
+      description: "Modelo estável e confiável da xAI"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/grok.svg"
+      preset:
+        endpoint: "Grok"
+        model: "x-ai/grok-3"
+    - name: "Grok 3 Mini"
+      label: "Grok 3 Mini"
+      description: "Versão compacta e econômica"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/grok.svg"
+      preset:
+        endpoint: "Grok"
+        model: "x-ai/grok-3-mini"
+
+    # ── Llama (Meta) ──
+    - name: "Llama 4 Maverick"
+      label: "Llama 4 Maverick"
+      description: "Modelo frontier open-source da Meta"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/meta.svg"
+      preset:
+        endpoint: "Llama"
+        model: "meta-llama/llama-4-maverick"
+    - name: "Llama 4 Scout"
+      label: "Llama 4 Scout"
+      description: "Modelo eficiente da série Llama 4"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/meta.svg"
+      preset:
+        endpoint: "Llama"
+        model: "meta-llama/llama-4-scout"
+    - name: "Llama 3.3 70B"
+      label: "Llama 3.3 70B"
+      description: "Performance de GPT-4, open-source"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/meta.svg"
+      preset:
+        endpoint: "Llama"
+        model: "meta-llama/llama-3.3-70b-instruct"
+    - name: "Llama 3.1 405B"
+      label: "Llama 3.1 405B"
+      description: "Maior modelo open-source do mundo"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/meta.svg"
+      preset:
+        endpoint: "Llama"
+        model: "meta-llama/llama-3.1-405b-instruct"
+
+    # ── Mistral ──
+    - name: "Mistral Large"
+      label: "Mistral Large"
+      description: "Modelo flagship da Mistral AI"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/mistral.svg"
+      preset:
+        endpoint: "Mistral"
+        model: "mistralai/mistral-large-2512"
+    - name: "Devstral Medium"
+      label: "Devstral Medium"
+      description: "Otimizado para desenvolvimento"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/mistral.svg"
+      preset:
+        endpoint: "Mistral"
+        model: "mistralai/devstral-medium"
+    - name: "Codestral"
+      label: "Codestral"
+      description: "Especialista em código"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/mistral.svg"
+      preset:
+        endpoint: "Mistral"
+        model: "mistralai/codestral-2508"
+
+    # ── Qwen (Alibaba) ──
+    - name: "Qwen Max"
+      label: "Qwen Max"
+      description: "Modelo mais capaz da Alibaba"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/qwen.svg"
+      preset:
+        endpoint: "Qwen"
+        model: "qwen/qwen-max"
+    - name: "Qwen Plus"
+      label: "Qwen Plus"
+      description: "Equilíbrio entre performance e custo"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/qwen.svg"
+      preset:
+        endpoint: "Qwen"
+        model: "qwen/qwen-plus"
+    - name: "Qwen3 14B"
+      label: "Qwen3 14B"
+      description: "Modelo compacto e eficiente"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/qwen.svg"
+      preset:
+        endpoint: "Qwen"
+        model: "qwen/qwen3-14b"
+    - name: "Qwen 2.5 72B"
+      label: "Qwen 2.5 72B"
+      description: "Modelo robusto de 72 bilhões de parâmetros"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/qwen.svg"
+      preset:
+        endpoint: "Qwen"
+        model: "qwen/qwen-2.5-72b-instruct"
+
+    # ── Cohere ──
+    - name: "Command A"
+      label: "Command A"
+      description: "Modelo enterprise da Cohere"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/cohere.svg"
+      preset:
+        endpoint: "Cohere"
+        model: "cohere/command-a"
+    - name: "Command R+"
+      label: "Command R+"
+      description: "Excelente para RAG e pesquisa"
+      iconURL: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/cohere.svg"
+      preset:
+        endpoint: "Cohere"
+        model: "cohere/command-r-plus-08-2024"
+
 endpoints:
   custom:
     # ═══════════════════════════════════════
