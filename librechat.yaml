@@ -20,7 +20,7 @@ registration:
 mcpServers:
   gmail:
     type: streamable-http
-    url: "https://backend.composio.dev/v3/mcp/4b4e60bf-6121-42c8-8ae7-61119a975608?user_id={{LIBRECHAT_USER_ID}}"
+    url: "https://backend.composio.dev/v3/mcp/4b4e60bf-6121-42c8-8ae7-61119a975608/mcp?user_id={{LIBRECHAT_USER_ID}}"
     title: "Gmail"
     description: "Leia, busque e envie emails do seu Gmail"
     iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/gmail.svg"
@@ -30,10 +30,13 @@ mcpServers:
     initTimeout: 150000
     chatMenu: true
     startup: false
+    serverInstructions: |
+      Quando o usuário receber erro "No connected account found", responda:
+      "Você precisa conectar sua conta do Gmail primeiro. Acesse: https://connect-production-af02.up.railway.app/?user_id={{LIBRECHAT_USER_ID}} e clique em Conectar ao lado do Gmail."
 
   google-drive:
     type: streamable-http
-    url: "https://backend.composio.dev/v3/mcp/e73b960e-3e6f-4cff-b42e-4754cb7ed4d8?user_id={{LIBRECHAT_USER_ID}}"
+    url: "https://backend.composio.dev/v3/mcp/e73b960e-3e6f-4cff-b42e-4754cb7ed4d8/mcp?user_id={{LIBRECHAT_USER_ID}}"
     title: "Google Drive"
     description: "Acesse e gerencie seus arquivos do Google Drive"
     iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/googledrive.svg"
@@ -43,10 +46,13 @@ mcpServers:
     initTimeout: 150000
     chatMenu: true
     startup: false
+    serverInstructions: |
+      Quando o usuário receber erro "No connected account found", responda:
+      "Você precisa conectar sua conta do Google Drive primeiro. Acesse: https://connect-production-af02.up.railway.app/?user_id={{LIBRECHAT_USER_ID}} e clique em Conectar ao lado do Google Drive."
 
   google-calendar:
     type: streamable-http
-    url: "https://backend.composio.dev/v3/mcp/443f0925-b25d-4644-a23a-bc753d2ff61e?user_id={{LIBRECHAT_USER_ID}}"
+    url: "https://backend.composio.dev/v3/mcp/443f0925-b25d-4644-a23a-bc753d2ff61e/mcp?user_id={{LIBRECHAT_USER_ID}}"
     title: "Google Calendar"
     description: "Veja e gerencie sua agenda do Google Calendar"
     iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/googlecalendar.svg"
@@ -56,10 +62,13 @@ mcpServers:
     initTimeout: 150000
     chatMenu: true
     startup: false
+    serverInstructions: |
+      Quando o usuário receber erro "No connected account found", responda:
+      "Você precisa conectar sua conta do Google Calendar primeiro. Acesse: https://connect-production-af02.up.railway.app/?user_id={{LIBRECHAT_USER_ID}} e clique em Conectar ao lado do Google Calendar."
 
   google-sheets:
     type: streamable-http
-    url: "https://backend.composio.dev/v3/mcp/27d25958-6124-4e9a-9e03-079504d5ab06?user_id={{LIBRECHAT_USER_ID}}"
+    url: "https://backend.composio.dev/v3/mcp/27d25958-6124-4e9a-9e03-079504d5ab06/mcp?user_id={{LIBRECHAT_USER_ID}}"
     title: "Google Sheets"
     description: "Leia e edite planilhas do Google Sheets"
     iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/googlesheets.svg"
@@ -69,10 +78,13 @@ mcpServers:
     initTimeout: 150000
     chatMenu: true
     startup: false
+    serverInstructions: |
+      Quando o usuário receber erro "No connected account found", responda:
+      "Você precisa conectar sua conta do Google Sheets primeiro. Acesse: https://connect-production-af02.up.railway.app/?user_id={{LIBRECHAT_USER_ID}} e clique em Conectar ao lado do Google Sheets."
 
   google-docs:
     type: streamable-http
-    url: "https://backend.composio.dev/v3/mcp/a388dfee-8679-4291-84ee-25b015eb7de2?user_id={{LIBRECHAT_USER_ID}}"
+    url: "https://backend.composio.dev/v3/mcp/a388dfee-8679-4291-84ee-25b015eb7de2/mcp?user_id={{LIBRECHAT_USER_ID}}"
     title: "Google Docs"
     description: "Acesse e edite documentos do Google Docs"
     iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/googledocs.svg"
@@ -82,10 +94,13 @@ mcpServers:
     initTimeout: 150000
     chatMenu: true
     startup: false
+    serverInstructions: |
+      Quando o usuário receber erro "No connected account found", responda:
+      "Você precisa conectar sua conta do Google Docs primeiro. Acesse: https://connect-production-af02.up.railway.app/?user_id={{LIBRECHAT_USER_ID}} e clique em Conectar ao lado do Google Docs."
 
   notion:
     type: streamable-http
-    url: "https://backend.composio.dev/v3/mcp/c4a0abbb-9f4a-473e-86fc-8bf83acaf4e7?user_id={{LIBRECHAT_USER_ID}}"
+    url: "https://backend.composio.dev/v3/mcp/c4a0abbb-9f4a-473e-86fc-8bf83acaf4e7/mcp?user_id={{LIBRECHAT_USER_ID}}"
     title: "Notion"
     description: "Busque e edite páginas e databases do Notion"
     iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/notion.svg"
@@ -95,10 +110,13 @@ mcpServers:
     initTimeout: 150000
     chatMenu: true
     startup: false
+    serverInstructions: |
+      Quando o usuário receber erro "No connected account found", responda:
+      "Você precisa conectar sua conta do Notion primeiro. Acesse: https://connect-production-af02.up.railway.app/?user_id={{LIBRECHAT_USER_ID}} e clique em Conectar ao lado do Notion."
 
   slack:
     type: streamable-http
-    url: "https://backend.composio.dev/v3/mcp/06ed91ca-5919-49b9-92d6-a79714e5f9d5?user_id={{LIBRECHAT_USER_ID}}"
+    url: "https://backend.composio.dev/v3/mcp/06ed91ca-5919-49b9-92d6-a79714e5f9d5/mcp?user_id={{LIBRECHAT_USER_ID}}"
     title: "Slack"
     description: "Leia mensagens e interaja com canais do Slack"
     iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/slack.svg"
@@ -108,10 +126,13 @@ mcpServers:
     initTimeout: 150000
     chatMenu: true
     startup: false
+    serverInstructions: |
+      Quando o usuário receber erro "No connected account found", responda:
+      "Você precisa conectar sua conta do Slack primeiro. Acesse: https://connect-production-af02.up.railway.app/?user_id={{LIBRECHAT_USER_ID}} e clique em Conectar ao lado do Slack."
 
   github:
     type: streamable-http
-    url: "https://backend.composio.dev/v3/mcp/91ff848e-e84e-41ba-9ee7-58201331fb3e?user_id={{LIBRECHAT_USER_ID}}"
+    url: "https://backend.composio.dev/v3/mcp/91ff848e-e84e-41ba-9ee7-58201331fb3e/mcp?user_id={{LIBRECHAT_USER_ID}}"
     title: "GitHub"
     description: "Acesse repositórios, issues e pull requests do GitHub"
     iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/github.svg"
@@ -121,10 +142,13 @@ mcpServers:
     initTimeout: 150000
     chatMenu: true
     startup: false
+    serverInstructions: |
+      Quando o usuário receber erro "No connected account found", responda:
+      "Você precisa conectar sua conta do GitHub primeiro. Acesse: https://connect-production-af02.up.railway.app/?user_id={{LIBRECHAT_USER_ID}} e clique em Conectar ao lado do GitHub."
 
   hubspot:
     type: streamable-http
-    url: "https://backend.composio.dev/v3/mcp/cdae67fb-2e17-4529-b83e-f39ba4d0ef83?user_id={{LIBRECHAT_USER_ID}}"
+    url: "https://backend.composio.dev/v3/mcp/cdae67fb-2e17-4529-b83e-f39ba4d0ef83/mcp?user_id={{LIBRECHAT_USER_ID}}"
     title: "HubSpot"
     description: "Acesse contatos, deals e dados do HubSpot CRM"
     iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/hubspot.svg"
@@ -134,10 +158,13 @@ mcpServers:
     initTimeout: 150000
     chatMenu: true
     startup: false
+    serverInstructions: |
+      Quando o usuário receber erro "No connected account found", responda:
+      "Você precisa conectar sua conta do HubSpot primeiro. Acesse: https://connect-production-af02.up.railway.app/?user_id={{LIBRECHAT_USER_ID}} e clique em Conectar ao lado do HubSpot."
 
   trello:
     type: streamable-http
-    url: "https://backend.composio.dev/v3/mcp/f10b1bb4-2299-40e4-a740-a552fca5d705?user_id={{LIBRECHAT_USER_ID}}"
+    url: "https://backend.composio.dev/v3/mcp/f10b1bb4-2299-40e4-a740-a552fca5d705/mcp?user_id={{LIBRECHAT_USER_ID}}"
     title: "Trello"
     description: "Gerencie boards, listas e cards do Trello"
     iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/trello.svg"
@@ -147,10 +174,13 @@ mcpServers:
     initTimeout: 150000
     chatMenu: true
     startup: false
+    serverInstructions: |
+      Quando o usuário receber erro "No connected account found", responda:
+      "Você precisa conectar sua conta do Trello primeiro. Acesse: https://connect-production-af02.up.railway.app/?user_id={{LIBRECHAT_USER_ID}} e clique em Conectar ao lado do Trello."
 
   linear:
     type: streamable-http
-    url: "https://backend.composio.dev/v3/mcp/934f67cb-7570-4575-82a8-f16fc4c3c06d?user_id={{LIBRECHAT_USER_ID}}"
+    url: "https://backend.composio.dev/v3/mcp/934f67cb-7570-4575-82a8-f16fc4c3c06d/mcp?user_id={{LIBRECHAT_USER_ID}}"
     title: "Linear"
     description: "Gerencie issues e projetos do Linear"
     iconPath: "https://raw.githubusercontent.com/nicolaskirvano/otimizzai-chat-config/main/icons/linear.svg"
@@ -160,6 +190,9 @@ mcpServers:
     initTimeout: 150000
     chatMenu: true
     startup: false
+    serverInstructions: |
+      Quando o usuário receber erro "No connected account found", responda:
+      "Você precisa conectar sua conta do Linear primeiro. Acesse: https://connect-production-af02.up.railway.app/?user_id={{LIBRECHAT_USER_ID}} e clique em Conectar ao lado do Linear."
 
 # ═══════════════════════════════════════════════
 # Model Specs - Nomes limpos para o usuário
